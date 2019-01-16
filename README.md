@@ -27,3 +27,31 @@
 ** formatting
 ** naming
 ** (https://github.com/softwaresaved/clean-code-workshop/blob/master/README.md)
+
+
+Naming
+Code sample:
+public int index;
+public List<int[]> itemList;
+public List<int[]> getItems() {
+    List<int[]> list1 = new ArrayList<int[]>();
+    for (int[] x : itemList) 
+        if (x[index] == 4)
+            list1.add(x);
+    return list1;    
+}
+
+1	1	1	1	1
+1	4	2	2	4
+1	3	4	2	1
+4	2	1	2	1
+1	1	0	1	4
+
+
+What is the itemList ?
+What is index?
+Why x[index] is important?
+What is 4?
+How are we going to use returned list?
+
+Hint: minesweeper
